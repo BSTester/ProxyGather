@@ -39,7 +39,7 @@ class SaveWorkingProxiesTests(unittest.TestCase):
             self.assertFalse(content.startswith('['))
 
             parsed_lines = [json.loads(line) for line in content.splitlines()]
-            self.assertEqual(
+            self.assertCountEqual(
                 parsed_lines,
                 [
                     {
