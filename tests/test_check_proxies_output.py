@@ -13,6 +13,50 @@ import CheckProxies
 
 
 class SaveWorkingProxiesTests(unittest.TestCase):
+    def test_country_jsonl_uses_json_lines_objects_not_wrapped_api_payload(self):
+        proxy_data = {'all': {'1.1.1.1:80', '2.2.2.2:80'}, 'http': {'1.1.1.1:80', '2.2.2.2:80'}, 'socks4': set(), 'socks5': set()}
+        country_proxy_data = {
+            'US': {
+                'name': 'United States of America (the)',
+                'protocols': {'all': {'1.1.1.1:80', '2.2.2.2:80'}, 'http': {'1.1.1.1:80', '2.2.2.2:80'}, 'socks4': set(), 'socks5': set()}
+            }
+        }
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            CheckProxies._save_working_proxies(
+                proxy_data,
+                prepend_protocol=False,
+                output_base=os.path.join(temp_dir, 'proxies', 'working-proxies.txt'),
+                is_final=True,
+                country_proxy_data=country_proxy_data
+            )
+
+            jsonl_path = os.path.join(temp_dir, 'proxies', 'by-country', 'US', 'working-proxies-http.jsonl')
+            with open(jsonl_path, 'r', encoding='utf-8') as f:
+                content = f.read().strip()
+
+            self.assertTrue(content.startswith('{'))
+            self.assertFalse(content.startswith('['))
+
+            parsed_lines = [json.loads(line) for line in content.splitlines()]
+            self.assertCountEqual(
+                parsed_lines,
+                [
+                    {
+                        'proxy': '1.1.1.1:80',
+                        'protocol': 'http',
+                        'country_code': 'US',
+                        'country': 'United States of America (the)'
+                    },
+                    {
+                        'proxy': '2.2.2.2:80',
+                        'protocol': 'http',
+                        'country_code': 'US',
+                        'country': 'United States of America (the)'
+                    }
+                ]
+            )
+
     def test_save_working_proxies_writes_country_lists_and_index(self):
         proxy_data = {
             'all': {'1.1.1.1:80', '2.2.2.2:1080'},
