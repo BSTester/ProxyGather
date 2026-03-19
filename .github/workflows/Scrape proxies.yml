@@ -49,5 +49,5 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "Re-scrape proxies"
-        file_pattern: "README.md proxies/scraped-proxies.txt proxies/working-proxies-*.txt proxies/by-country/**/*.txt proxies/by-country/index.json" # commit generated proxy outputs and README updates
+        file_pattern: "README.md proxies/scraped-proxies.txt proxies/working-proxies-*.txt proxies/by-country/" # commit generated proxy outputs and README updates
         push_options: '--force'
