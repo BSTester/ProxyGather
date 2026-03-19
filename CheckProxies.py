@@ -18,8 +18,8 @@ SAVE_BATCH_SIZE = 25
 PROTOCOL_ORDER = ('all', 'http', 'socks4', 'socks5')
 
 def _normalize_country_code(country_code: str) -> str:
-    normalized = re.sub(r'[^A-Za-z0-9_-]', '', (country_code or '').strip().upper())
-    return normalized if normalized and normalized != '-' else ''
+    normalized = re.sub(r'[^A-Za-z]', '', (country_code or '').strip().upper())
+    return normalized if len(normalized) == 2 else ''
 
 def _write_proxy_file(filename: str, proxies_set: set, prepend_protocol: bool, protocol: str) -> None:
     with open(filename, 'w', encoding='utf-8') as f:
@@ -230,7 +230,6 @@ def run_checker_pipeline(args, input_queue: Optional[queue.Queue] = None, result
                                         'name': details.get('country') or country_code,
                                         'protocols': {'all': set(), 'http': set(), 'socks4': set(), 'socks5': set()}
                                     })
-                                    country_entry['name'] = details.get('country') or country_entry['name']
                                     country_entry['protocols']['all'].add(line)
                                     for p in details.get('protocols', []):
                                         if p in country_entry['protocols']:

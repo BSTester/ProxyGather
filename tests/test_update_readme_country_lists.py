@@ -8,7 +8,7 @@ import unittest
 
 class UpdateReadmeCountryListsTests(unittest.TestCase):
     def test_script_renders_country_links_into_readme(self):
-        repo_root = '/home/runner/work/ProxyGather/ProxyGather'
+        repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         script_path = os.path.join(repo_root, 'scripts', 'update_readme_country_lists.py')
 
         with tempfile.TemporaryDirectory() as temp_dir:

@@ -20,11 +20,11 @@ If you find this project useful, **please consider giving it a star ⭐** or sha
 These URLs link directly to the raw, automatically-updated proxy lists. You can integrate them right into your projects.
 
 *   **Working Proxies (Checked and Recommended):**
-    *   All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/working-proxies-all.txt`
-    *   HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/working-proxies-http.txt`
-    *   SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/working-proxies-socks4.txt`
-    *   SOCKS5: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/working-proxies-socks5.txt`
-*   **All Scraped Unchecked Proxies (Most are dead):** `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/scraped-proxies.txt`
+    *   All Protocols: `https://raw.githubusercontent.com/Skillter/ProxyGather/refs/heads/master/proxies/working-proxies-all.txt`
+    *   HTTP: `https://raw.githubusercontent.com/Skillter/ProxyGather/refs/heads/master/proxies/working-proxies-http.txt`
+    *   SOCKS4: `https://raw.githubusercontent.com/Skillter/ProxyGather/refs/heads/master/proxies/working-proxies-socks4.txt`
+    *   SOCKS5: `https://raw.githubusercontent.com/Skillter/ProxyGather/refs/heads/master/proxies/working-proxies-socks5.txt`
+*   **All Scraped Unchecked Proxies (Most are dead):** `https://raw.githubusercontent.com/Skillter/ProxyGather/refs/heads/master/proxies/scraped-proxies.txt`
 
 ### Country-specific Working Proxy Lists
 
