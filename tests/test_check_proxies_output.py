@@ -60,6 +60,17 @@ class SaveWorkingProxiesTests(unittest.TestCase):
             with open(os.path.join(temp_dir, 'proxies', 'by-country', 'DE', 'working-proxies-socks5.txt'), 'r', encoding='utf-8') as f:
                 self.assertEqual(f.read().splitlines(), ['socks5://2.2.2.2:1080'])
 
+            with open(os.path.join(temp_dir, 'proxies', 'by-country', 'DE', 'working-proxies-socks5.jsonl'), 'r', encoding='utf-8') as f:
+                self.assertEqual(
+                    [json.loads(line) for line in f.read().splitlines()],
+                    [{
+                        'proxy': '2.2.2.2:1080',
+                        'protocol': 'socks5',
+                        'country_code': 'DE',
+                        'country': 'Germany'
+                    }]
+                )
+
             with open(os.path.join(temp_dir, 'proxies', 'by-country', 'index.json'), 'r', encoding='utf-8') as f:
                 self.assertEqual(
                     json.load(f),
