@@ -4,9 +4,8 @@
 name: Scrape and check proxies
 
 on:
-  # schedule:
-    # - cron: '*/30 * * * *' # run every 30 minutes
-#   - cron: '0 * * * *' # run every 60 minutes
+  schedule:
+    - cron: '*/30 * * * *' # run every 30 minutes
   workflow_dispatch: # be able to optionally run it manually
 
 permissions:
@@ -42,10 +41,13 @@ jobs:
     - name: Run the proxy checker
       run: |
         python CheckProxies.py --input proxies/scraped-proxies.txt proxies/working-proxies-all.txt --output proxies/working-proxies.txt --threads 3000 --timeout 3s
+    - name: Update README country lists
+      run: |
+        python scripts/update_readme_country_lists.py --readme README.md --country-index proxies/by-country/index.json --repository "${{ github.repository }}" --branch "${{ github.ref_name }}"
     # commit the changes
     - name: Commit and push
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "Re-scrape proxies"
-        file_pattern: "proxies/scraped-proxies.txt proxies/working-proxies-*.txt" # only commit the matching files
+        file_pattern: "README.md proxies/scraped-proxies.txt proxies/working-proxies-*.txt proxies/by-country/**/*.txt proxies/by-country/index.json" # commit generated proxy outputs and README updates
         push_options: '--force'

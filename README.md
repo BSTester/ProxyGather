@@ -26,6 +26,14 @@ These URLs link directly to the raw, automatically-updated proxy lists. You can 
     *   SOCKS5: `https://raw.githubusercontent.com/Skillter/ProxyGather/refs/heads/master/proxies/working-proxies-socks5.txt`
 *   **All Scraped Unchecked Proxies (Most are dead):** `https://raw.githubusercontent.com/Skillter/ProxyGather/refs/heads/master/proxies/scraped-proxies.txt`
 
+### Country-specific Working Proxy Lists
+
+These country-specific proxy lists are generated automatically from the latest successful GitHub Actions run.
+
+<!-- country-proxy-lists:start -->
+_No country-specific proxy lists are available yet. The next successful workflow run will populate this section._
+<!-- country-proxy-lists:end -->
+
 ## Notice
 
 I do not host the provided proxies. The code is design to only **collect publicly listed proxies** from websites and check if they are working. Remember that **some public proxies are intentionally malicious**, so **never** send your passwords or any sensitive data while connected to any public proxy to be safe. I built this tool to make it easier for developers and power-users to access resources for building/creating things, because I believe skill and talent shouldn't be wasted by no budget. **I condemn malicious use**, please use proxies responsibly. 

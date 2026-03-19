@@ -4,6 +4,7 @@ import argparse
 import os
 import re
 import queue
+import shutil
 from concurrent.futures import ThreadPoolExecutor, as_completed, wait, FIRST_COMPLETED
 from datetime import datetime
 import glob
@@ -14,26 +15,72 @@ from checker.proxy_checker import ProxyChecker
 from helper.termination import termination_context, should_terminate
 
 SAVE_BATCH_SIZE = 25
+PROTOCOL_ORDER = ('all', 'http', 'socks4', 'socks5')
 
-def _save_working_proxies(proxy_data, prepend_protocol, output_base, is_final=False) -> None:
+def _normalize_country_code(country_code: str) -> str:
+    normalized = re.sub(r'[^A-Za-z]', '', (country_code or '').strip().upper())
+    return normalized if len(normalized) == 2 else ''
+
+def _write_proxy_file(filename: str, proxies_set: set, prepend_protocol: bool, protocol: str) -> None:
+    with open(filename, 'w', encoding='utf-8') as f:
+        for proxy in sorted(proxies_set):
+            if prepend_protocol and protocol != 'all':
+                f.write(f"{protocol}://{proxy}\n")
+            else:
+                f.write(f"{proxy}\n")
+
+def _save_country_working_proxies(country_proxy_data, prepend_protocol, directory, base_name, ext) -> None:
+    country_root = os.path.join(directory or '.', 'by-country')
+    if os.path.exists(country_root):
+        shutil.rmtree(country_root)
+    os.makedirs(country_root, exist_ok=True)
+
+    index = []
+    for country_code in sorted(country_proxy_data):
+        entry = country_proxy_data[country_code]
+        protocols = entry.get('protocols', {})
+        available_protocols = [protocol for protocol in PROTOCOL_ORDER if protocols.get(protocol)]
+        if not available_protocols:
+            continue
+
+        country_dir = os.path.join(country_root, country_code)
+        os.makedirs(country_dir, exist_ok=True)
+        for protocol in available_protocols:
+            filename = os.path.join(country_dir, f"{base_name}-{protocol}{ext}")
+            _write_proxy_file(filename, protocols[protocol], prepend_protocol, protocol)
+
+        index.append({
+            'country': entry.get('name') or country_code,
+            'country_code': country_code,
+            'protocols': available_protocols
+        })
+
+    with open(os.path.join(country_root, 'index.json'), 'w', encoding='utf-8') as f:
+        json.dump(index, f, ensure_ascii=False, indent=2)
+
+def _save_working_proxies(proxy_data, prepend_protocol, output_base, is_final=False, country_proxy_data=None) -> None:
     """Saves the working proxies, creating the output directory if needed."""
     base, ext = os.path.splitext(output_base)
     if not ext: ext = ".txt"
     directory = os.path.dirname(base)
     if directory and not os.path.exists(directory): os.makedirs(directory)
 
-    for protocol, proxies_set in proxy_data.items():
-        if not proxies_set: continue
+    for protocol in PROTOCOL_ORDER:
+        proxies_set = proxy_data.get(protocol, set())
         filename = f"{base}-{protocol}{ext}"
+        if not proxies_set:
+            if os.path.exists(filename):
+                os.remove(filename)
+            continue
         try:
-            with open(filename, 'w', encoding='utf-8') as f:
-                for proxy in sorted(proxies_set):
-                    if prepend_protocol and protocol != 'all':
-                        f.write(f"{protocol}://{proxy}\n")
-                    else:
-                        f.write(f"{proxy}\n")
+            _write_proxy_file(filename, proxies_set, prepend_protocol, protocol)
         except IOError as e:
             print(f"[ERROR] Could not write to output file '{filename}': {e}", flush=True)
+    try:
+        if country_proxy_data is not None:
+            _save_country_working_proxies(country_proxy_data, prepend_protocol, directory, os.path.basename(base), ext)
+    except IOError as e:
+        print(f"[ERROR] Could not write country proxy files: {e}", flush=True)
     if not is_final:
         total = len(proxy_data.get('all', set()))
         print(f"[PROGRESS] Interim save complete. {total} total working proxies.", flush=True)
@@ -107,6 +154,7 @@ def run_checker_pipeline(args, input_queue: Optional[queue.Queue] = None, result
     in_flight = {}
     submitted_proxies = set()
     working_proxies = {'all': set(), 'http': set(), 'socks4': set(), 'socks5': set()}
+    working_proxies_by_country = {}
     executor = ThreadPoolExecutor(max_workers=args.threads)
 
     def shutdown_executor():
@@ -176,9 +224,25 @@ def run_checker_pipeline(args, input_queue: Optional[queue.Queue] = None, result
                                 for p in details.get('protocols', []):
                                     if p in working_proxies: working_proxies[p].add(line)
 
+                                country_code = _normalize_country_code(details.get('country_code', ''))
+                                if country_code:
+                                    country_entry = working_proxies_by_country.setdefault(country_code, {
+                                        'name': details.get('country') or country_code,
+                                        'protocols': {'all': set(), 'http': set(), 'socks4': set(), 'socks5': set()}
+                                    })
+                                    country_entry['protocols']['all'].add(line)
+                                    for p in details.get('protocols', []):
+                                        if p in country_entry['protocols']:
+                                            country_entry['protocols'][p].add(line)
+
                                 print(f"\n[SUCCESS] Proxy: {line:<21} | Anon: {details['anonymity']:<11} | {','.join(details['protocols']):<14} | {details['timeout']}ms", flush=True)
                                 if len(working_proxies['all']) % SAVE_BATCH_SIZE == 0:
-                                    _save_working_proxies(working_proxies, args.prepend_protocol, output_base_name)
+                                    _save_working_proxies(
+                                        working_proxies,
+                                        args.prepend_protocol,
+                                        output_base_name,
+                                        country_proxy_data=working_proxies_by_country
+                                    )
 
                                 if result_callback: result_callback(proxy, True, details)
                             else:
@@ -206,8 +270,13 @@ def run_checker_pipeline(args, input_queue: Optional[queue.Queue] = None, result
         print("--- Check Finished ---", flush=True)
         total = len(working_proxies['all'])
         print(f"Found {total} working proxies.", flush=True)
-        if total > 0:
-            _save_working_proxies(working_proxies, args.prepend_protocol, output_base_name, is_final=True)
+        _save_working_proxies(
+            working_proxies,
+            args.prepend_protocol,
+            output_base_name,
+            is_final=True,
+            country_proxy_data=working_proxies_by_country
+        )
 
 def main():
     parser = argparse.ArgumentParser(description="Proxy checker.")
