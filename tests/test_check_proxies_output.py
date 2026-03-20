@@ -134,7 +134,7 @@ class SaveWorkingProxiesTests(unittest.TestCase):
                     ]
                 )
 
-    def test_country_protocol_specific_files_also_include_prefixed_variants(self):
+    def test_country_protocol_files_generate_prefixed_variants(self):
         proxy_data = {'all': {'1.1.1.1:80'}, 'http': {'1.1.1.1:80'}, 'socks4': set(), 'socks5': set()}
         country_proxy_data = {
             'US': {
