@@ -29,6 +29,9 @@ def _write_proxy_file(filename: str, proxies_set: set, prepend_protocol: bool, p
             else:
                 f.write(f"{proxy}\n")
 
+def _build_country_protocol_prefixed_filename(country_dir: str, base_name: str, protocol: str, ext: str) -> str:
+    return os.path.join(country_dir, f"{base_name}-{protocol}-with-protocol{ext}")
+
 def _write_proxy_json_file(filename: str, proxies_set: set, protocol: str, country_code: str, country_name: str) -> None:
     payload = {
         'proxies': [
@@ -64,7 +67,10 @@ def _save_country_working_proxies(country_proxy_data, prepend_protocol, director
         country_name = entry.get('name') or country_code
         for protocol in available_protocols:
             filename = os.path.join(country_dir, f"{base_name}-{protocol}{ext}")
-            _write_proxy_file(filename, protocols[protocol], prepend_protocol, protocol)
+            _write_proxy_file(filename, protocols[protocol], False, protocol)
+            if protocol != 'all':
+                protocol_filename = _build_country_protocol_prefixed_filename(country_dir, base_name, protocol, ext)
+                _write_proxy_file(protocol_filename, protocols[protocol], True, protocol)
             json_filename = os.path.join(country_dir, f"{base_name}-{protocol}.json")
             _write_proxy_json_file(json_filename, protocols[protocol], protocol, country_code, country_name)
 

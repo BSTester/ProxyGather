@@ -305,7 +305,7 @@ python ProxyGather.py check --input proxies/scraped.txt --output proxies/working
 *   `--checker-threads`: The number of concurrent threads to use for checking. (Default: 500)
 *   `--timeout`: The timeout for each proxy check (e.g. `8s`, `500ms`). (Default: `6s`)
 *   `-v`, `--verbose`: Enable detailed logging
-*   `--prepend-protocol`: Add the protocol prefix (e.g. "http://", "socks5://") to the start of each line
+*   `--prepend-protocol`: Add the protocol prefix (e.g. "http://", "socks5://") to the start of each line in the main output files. Country-specific exports also keep the plain `host:port` text files and additionally generate protocol-prefixed variants such as `working-proxies-http-with-protocol.txt`.
 
 ### Unified Mode (Scrape + Check)
 

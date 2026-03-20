@@ -103,7 +103,14 @@ class SaveWorkingProxiesTests(unittest.TestCase):
                 self.assertEqual(f.read().splitlines(), ['http://1.1.1.1:80'])
 
             with open(os.path.join(temp_dir, 'proxies', 'by-country', 'DE', 'working-proxies-socks5.txt'), 'r', encoding='utf-8') as f:
+                self.assertEqual(f.read().splitlines(), ['2.2.2.2:1080'])
+
+            with open(os.path.join(temp_dir, 'proxies', 'by-country', 'DE', 'working-proxies-socks5-with-protocol.txt'), 'r', encoding='utf-8') as f:
                 self.assertEqual(f.read().splitlines(), ['socks5://2.2.2.2:1080'])
+
+            self.assertFalse(
+                os.path.exists(os.path.join(temp_dir, 'proxies', 'by-country', 'DE', 'working-proxies-all-with-protocol.txt'))
+            )
 
             with open(os.path.join(temp_dir, 'proxies', 'by-country', 'DE', 'working-proxies-socks5.json'), 'r', encoding='utf-8') as f:
                 self.assertEqual(
@@ -126,6 +133,30 @@ class SaveWorkingProxiesTests(unittest.TestCase):
                         {'country': 'United States', 'country_code': 'US', 'protocols': ['all', 'http']}
                     ]
                 )
+
+    def test_country_protocol_specific_files_also_include_prefixed_variants(self):
+        proxy_data = {'all': {'1.1.1.1:80'}, 'http': {'1.1.1.1:80'}, 'socks4': set(), 'socks5': set()}
+        country_proxy_data = {
+            'US': {
+                'name': 'United States',
+                'protocols': {'all': {'1.1.1.1:80'}, 'http': {'1.1.1.1:80'}, 'socks4': set(), 'socks5': set()}
+            }
+        }
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            CheckProxies._save_working_proxies(
+                proxy_data,
+                prepend_protocol=False,
+                output_base=os.path.join(temp_dir, 'proxies', 'working-proxies.txt'),
+                is_final=True,
+                country_proxy_data=country_proxy_data
+            )
+
+            with open(os.path.join(temp_dir, 'proxies', 'by-country', 'US', 'working-proxies-http.txt'), 'r', encoding='utf-8') as f:
+                self.assertEqual(f.read().splitlines(), ['1.1.1.1:80'])
+
+            with open(os.path.join(temp_dir, 'proxies', 'by-country', 'US', 'working-proxies-http-with-protocol.txt'), 'r', encoding='utf-8') as f:
+                self.assertEqual(f.read().splitlines(), ['http://1.1.1.1:80'])
 
     def test_save_working_proxies_clears_stale_country_files(self):
         proxy_data = {'all': {'1.1.1.1:80'}, 'http': {'1.1.1.1:80'}, 'socks4': set(), 'socks5': set()}
