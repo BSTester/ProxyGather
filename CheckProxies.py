@@ -48,7 +48,7 @@ def _write_proxy_json_file(filename: str, proxies_set: set, protocol: str, count
         json.dump(payload, f, ensure_ascii=False)
         f.write('\n')
 
-def _save_country_working_proxies(country_proxy_data, prepend_protocol, directory, base_name, ext) -> None:
+def _save_country_working_proxies(country_proxy_data, directory, base_name, ext) -> None:
     country_root = os.path.join(directory or '.', 'by-country')
     if os.path.exists(country_root):
         shutil.rmtree(country_root)
@@ -103,7 +103,7 @@ def _save_working_proxies(proxy_data, prepend_protocol, output_base, is_final=Fa
             print(f"[ERROR] Could not write to output file '{filename}': {e}", flush=True)
     try:
         if country_proxy_data is not None:
-            _save_country_working_proxies(country_proxy_data, prepend_protocol, directory, os.path.basename(base), ext)
+            _save_country_working_proxies(country_proxy_data, directory, os.path.basename(base), ext)
     except IOError as e:
         print(f"[ERROR] Could not write country proxy files: {e}", flush=True)
     if not is_final:
