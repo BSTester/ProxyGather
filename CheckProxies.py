@@ -29,15 +29,21 @@ def _write_proxy_file(filename: str, proxies_set: set, prepend_protocol: bool, p
             else:
                 f.write(f"{proxy}\n")
 
-def _write_proxy_jsonl_file(filename: str, proxies_set: set, protocol: str, country_code: str, country_name: str) -> None:
-    with open(filename, 'w', encoding='utf-8') as f:
-        for proxy in sorted(proxies_set):
-            f.write(json.dumps({
+def _write_proxy_json_file(filename: str, proxies_set: set, protocol: str, country_code: str, country_name: str) -> None:
+    payload = {
+        'proxies': [
+            {
                 'proxy': proxy,
                 'protocol': protocol,
                 'country_code': country_code,
                 'country': country_name
-            }, ensure_ascii=False) + '\n')
+            }
+            for proxy in sorted(proxies_set)
+        ]
+    }
+    with open(filename, 'w', encoding='utf-8') as f:
+        json.dump(payload, f, ensure_ascii=False)
+        f.write('\n')
 
 def _save_country_working_proxies(country_proxy_data, prepend_protocol, directory, base_name, ext) -> None:
     country_root = os.path.join(directory or '.', 'by-country')
@@ -59,8 +65,8 @@ def _save_country_working_proxies(country_proxy_data, prepend_protocol, director
         for protocol in available_protocols:
             filename = os.path.join(country_dir, f"{base_name}-{protocol}{ext}")
             _write_proxy_file(filename, protocols[protocol], prepend_protocol, protocol)
-            jsonl_filename = os.path.join(country_dir, f"{base_name}-{protocol}.jsonl")
-            _write_proxy_jsonl_file(jsonl_filename, protocols[protocol], protocol, country_code, country_name)
+            json_filename = os.path.join(country_dir, f"{base_name}-{protocol}.json")
+            _write_proxy_json_file(json_filename, protocols[protocol], protocol, country_code, country_name)
 
         index.append({
             'country': country_name,

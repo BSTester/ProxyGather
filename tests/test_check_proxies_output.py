@@ -13,7 +13,7 @@ import CheckProxies
 
 
 class SaveWorkingProxiesTests(unittest.TestCase):
-    def test_country_jsonl_uses_json_lines_objects_not_wrapped_api_payload(self):
+    def test_country_json_uses_rest_api_payload(self):
         proxy_data = {'all': {'1.1.1.1:80', '2.2.2.2:80'}, 'http': {'1.1.1.1:80', '2.2.2.2:80'}, 'socks4': set(), 'socks5': set()}
         country_proxy_data = {
             'US': {
@@ -31,16 +31,17 @@ class SaveWorkingProxiesTests(unittest.TestCase):
                 country_proxy_data=country_proxy_data
             )
 
-            jsonl_path = os.path.join(temp_dir, 'proxies', 'by-country', 'US', 'working-proxies-http.jsonl')
-            with open(jsonl_path, 'r', encoding='utf-8') as f:
+            json_path = os.path.join(temp_dir, 'proxies', 'by-country', 'US', 'working-proxies-http.json')
+            with open(json_path, 'r', encoding='utf-8') as f:
                 content = f.read().strip()
 
             self.assertTrue(content.startswith('{'))
             self.assertFalse(content.startswith('['))
 
-            parsed_lines = [json.loads(line) for line in content.splitlines()]
+            payload = json.loads(content)
+            self.assertEqual(set(payload), {'proxies'})
             self.assertCountEqual(
-                parsed_lines,
+                payload['proxies'],
                 [
                     {
                         'proxy': '1.1.1.1:80',
@@ -104,15 +105,17 @@ class SaveWorkingProxiesTests(unittest.TestCase):
             with open(os.path.join(temp_dir, 'proxies', 'by-country', 'DE', 'working-proxies-socks5.txt'), 'r', encoding='utf-8') as f:
                 self.assertEqual(f.read().splitlines(), ['socks5://2.2.2.2:1080'])
 
-            with open(os.path.join(temp_dir, 'proxies', 'by-country', 'DE', 'working-proxies-socks5.jsonl'), 'r', encoding='utf-8') as f:
+            with open(os.path.join(temp_dir, 'proxies', 'by-country', 'DE', 'working-proxies-socks5.json'), 'r', encoding='utf-8') as f:
                 self.assertEqual(
-                    [json.loads(line) for line in f.read().splitlines()],
-                    [{
-                        'proxy': '2.2.2.2:1080',
-                        'protocol': 'socks5',
-                        'country_code': 'DE',
-                        'country': 'Germany'
-                    }]
+                    json.load(f),
+                    {
+                        'proxies': [{
+                            'proxy': '2.2.2.2:1080',
+                            'protocol': 'socks5',
+                            'country_code': 'DE',
+                            'country': 'Germany'
+                        }]
+                    }
                 )
 
             with open(os.path.join(temp_dir, 'proxies', 'by-country', 'index.json'), 'r', encoding='utf-8') as f:
