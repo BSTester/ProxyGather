@@ -55,7 +55,6 @@ def _save_country_working_proxies(country_proxy_data, prepend_protocol, director
     os.makedirs(country_root, exist_ok=True)
     # Country-specific text exports always keep the plain host:port file and
     # add separate protocol-prefixed variants for protocol-specific lists.
-    _ = prepend_protocol
 
     index = []
     for country_code in sorted(country_proxy_data):
