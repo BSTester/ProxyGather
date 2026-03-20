@@ -39,24 +39,23 @@ class SaveWorkingProxiesTests(unittest.TestCase):
             self.assertFalse(content.startswith('['))
 
             payload = json.loads(content)
-            self.assertEqual(
-                payload,
-                {
-                    'proxies': [
-                        {
-                            'proxy': '1.1.1.1:80',
-                            'protocol': 'http',
-                            'country_code': 'US',
-                            'country': 'United States of America (the)'
-                        },
-                        {
-                            'proxy': '2.2.2.2:80',
-                            'protocol': 'http',
-                            'country_code': 'US',
-                            'country': 'United States of America (the)'
-                        }
-                    ]
-                }
+            self.assertEqual(set(payload), {'proxies'})
+            self.assertCountEqual(
+                payload['proxies'],
+                [
+                    {
+                        'proxy': '1.1.1.1:80',
+                        'protocol': 'http',
+                        'country_code': 'US',
+                        'country': 'United States of America (the)'
+                    },
+                    {
+                        'proxy': '2.2.2.2:80',
+                        'protocol': 'http',
+                        'country_code': 'US',
+                        'country': 'United States of America (the)'
+                    }
+                ]
             )
 
     def test_save_working_proxies_writes_country_lists_and_index(self):

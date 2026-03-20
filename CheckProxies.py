@@ -43,6 +43,7 @@ def _write_proxy_json_file(filename: str, proxies_set: set, protocol: str, count
     }
     with open(filename, 'w', encoding='utf-8') as f:
         json.dump(payload, f, ensure_ascii=False)
+        f.write('\n')
 
 def _save_country_working_proxies(country_proxy_data, prepend_protocol, directory, base_name, ext) -> None:
     country_root = os.path.join(directory or '.', 'by-country')
