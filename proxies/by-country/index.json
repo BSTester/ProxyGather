@@ -8,22 +8,6 @@
     ]
   },
   {
-    "country": "Armenia",
-    "country_code": "AM",
-    "protocols": [
-      "all",
-      "socks4"
-    ]
-  },
-  {
-    "country": "Argentina",
-    "country_code": "AR",
-    "protocols": [
-      "all",
-      "socks4"
-    ]
-  },
-  {
     "country": "Australia",
     "country_code": "AU",
     "protocols": [
@@ -46,20 +30,13 @@
     "country_code": "BR",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks5"
     ]
   },
   {
     "country": "Switzerland",
     "country_code": "CH",
-    "protocols": [
-      "all",
-      "http"
-    ]
-  },
-  {
-    "country": "Chile",
-    "country_code": "CL",
     "protocols": [
       "all",
       "http"
@@ -76,14 +53,6 @@
     ]
   },
   {
-    "country": "Colombia",
-    "country_code": "CO",
-    "protocols": [
-      "all",
-      "http"
-    ]
-  },
-  {
     "country": "Czechia",
     "country_code": "CZ",
     "protocols": [
@@ -96,7 +65,8 @@
     "country_code": "DE",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks5"
     ]
   },
   {
@@ -105,6 +75,14 @@
     "protocols": [
       "all",
       "http"
+    ]
+  },
+  {
+    "country": "Estonia",
+    "country_code": "EE",
+    "protocols": [
+      "all",
+      "socks5"
     ]
   },
   {
@@ -131,15 +109,6 @@
     "country_code": "GB",
     "protocols": [
       "all",
-      "http",
-      "socks5"
-    ]
-  },
-  {
-    "country": "Ghana",
-    "country_code": "GH",
-    "protocols": [
-      "all",
       "http"
     ]
   },
@@ -149,7 +118,16 @@
     "protocols": [
       "all",
       "http",
+      "socks4",
       "socks5"
+    ]
+  },
+  {
+    "country": "Honduras",
+    "country_code": "HN",
+    "protocols": [
+      "all",
+      "http"
     ]
   },
   {
@@ -157,13 +135,20 @@
     "country_code": "ID",
     "protocols": [
       "all",
-      "http",
-      "socks5"
+      "http"
     ]
   },
   {
     "country": "India",
     "country_code": "IN",
+    "protocols": [
+      "all",
+      "http"
+    ]
+  },
+  {
+    "country": "Iraq",
+    "country_code": "IQ",
     "protocols": [
       "all",
       "http"
@@ -186,15 +171,6 @@
     ]
   },
   {
-    "country": "Italy",
-    "country_code": "IT",
-    "protocols": [
-      "all",
-      "socks4",
-      "socks5"
-    ]
-  },
-  {
     "country": "Japan",
     "country_code": "JP",
     "protocols": [
@@ -205,11 +181,20 @@
     ]
   },
   {
+    "country": "Kyrgyzstan",
+    "country_code": "KG",
+    "protocols": [
+      "all",
+      "http"
+    ]
+  },
+  {
     "country": "Cambodia",
     "country_code": "KH",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks5"
     ]
   },
   {
@@ -218,7 +203,6 @@
     "protocols": [
       "all",
       "http",
-      "socks4",
       "socks5"
     ]
   },
@@ -259,6 +243,8 @@
     "country_code": "NL",
     "protocols": [
       "all",
+      "http",
+      "socks4",
       "socks5"
     ]
   },
@@ -279,22 +265,6 @@
     ]
   },
   {
-    "country": "Puerto Rico",
-    "country_code": "PR",
-    "protocols": [
-      "all",
-      "http"
-    ]
-  },
-  {
-    "country": "Portugal",
-    "country_code": "PT",
-    "protocols": [
-      "all",
-      "http"
-    ]
-  },
-  {
     "country": "Russian Federation (the)",
     "country_code": "RU",
     "protocols": [
@@ -309,7 +279,9 @@
     "country_code": "SA",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks4",
+      "socks5"
     ]
   },
   {
@@ -318,7 +290,6 @@
     "protocols": [
       "all",
       "http",
-      "socks4",
       "socks5"
     ]
   },
@@ -360,15 +331,7 @@
     "protocols": [
       "all",
       "http",
-      "socks5"
-    ]
-  },
-  {
-    "country": "Tanzania, the United Republic of",
-    "country_code": "TZ",
-    "protocols": [
-      "all",
-      "http"
+      "socks4"
     ]
   },
   {
@@ -376,8 +339,7 @@
     "country_code": "UA",
     "protocols": [
       "all",
-      "http",
-      "socks4"
+      "http"
     ]
   },
   {
@@ -395,7 +357,8 @@
     "country_code": "VN",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks5"
     ]
   }
 ]
