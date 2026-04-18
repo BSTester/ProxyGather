@@ -12,6 +12,7 @@
     "country_code": "AT",
     "protocols": [
       "all",
+      "http",
       "socks5"
     ]
   },
@@ -44,8 +45,8 @@
     ]
   },
   {
-    "country": "Burkina Faso",
-    "country_code": "BF",
+    "country": "Bulgaria",
+    "country_code": "BG",
     "protocols": [
       "all",
       "socks4"
@@ -57,8 +58,7 @@
     "protocols": [
       "all",
       "http",
-      "socks4",
-      "socks5"
+      "socks4"
     ]
   },
   {
@@ -66,6 +66,8 @@
     "country_code": "CA",
     "protocols": [
       "all",
+      "http",
+      "socks4",
       "socks5"
     ]
   },
@@ -86,14 +88,6 @@
       "http",
       "socks4",
       "socks5"
-    ]
-  },
-  {
-    "country": "Colombia",
-    "country_code": "CO",
-    "protocols": [
-      "all",
-      "socks4"
     ]
   },
   {
@@ -187,22 +181,6 @@
     ]
   },
   {
-    "country": "Georgia",
-    "country_code": "GE",
-    "protocols": [
-      "all",
-      "socks4"
-    ]
-  },
-  {
-    "country": "Ghana",
-    "country_code": "GH",
-    "protocols": [
-      "all",
-      "http"
-    ]
-  },
-  {
     "country": "Hong Kong",
     "country_code": "HK",
     "protocols": [
@@ -213,21 +191,12 @@
     ]
   },
   {
-    "country": "Honduras",
-    "country_code": "HN",
-    "protocols": [
-      "all",
-      "socks4"
-    ]
-  },
-  {
     "country": "Indonesia",
     "country_code": "ID",
     "protocols": [
       "all",
       "http",
-      "socks4",
-      "socks5"
+      "socks4"
     ]
   },
   {
@@ -235,7 +204,9 @@
     "country_code": "IE",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks4",
+      "socks5"
     ]
   },
   {
@@ -281,15 +252,6 @@
     ]
   },
   {
-    "country": "Italy",
-    "country_code": "IT",
-    "protocols": [
-      "all",
-      "socks4",
-      "socks5"
-    ]
-  },
-  {
     "country": "Japan",
     "country_code": "JP",
     "protocols": [
@@ -323,7 +285,6 @@
     "protocols": [
       "all",
       "http",
-      "socks4",
       "socks5"
     ]
   },
@@ -347,6 +308,16 @@
   {
     "country": "Latvia",
     "country_code": "LV",
+    "protocols": [
+      "all",
+      "http",
+      "socks4",
+      "socks5"
+    ]
+  },
+  {
+    "country": "Moldova (the Republic of)",
+    "country_code": "MD",
     "protocols": [
       "all",
       "http",
@@ -384,8 +355,7 @@
     "country_code": "NG",
     "protocols": [
       "all",
-      "http",
-      "socks4"
+      "http"
     ]
   },
   {
@@ -419,7 +389,7 @@
     "country_code": "PE",
     "protocols": [
       "all",
-      "http"
+      "socks4"
     ]
   },
   {
@@ -428,6 +398,15 @@
     "protocols": [
       "all",
       "http"
+    ]
+  },
+  {
+    "country": "Pakistan",
+    "country_code": "PK",
+    "protocols": [
+      "all",
+      "http",
+      "socks5"
     ]
   },
   {
@@ -446,14 +425,6 @@
     "protocols": [
       "all",
       "http"
-    ]
-  },
-  {
-    "country": "Serbia",
-    "country_code": "RS",
-    "protocols": [
-      "all",
-      "socks4"
     ]
   },
   {
@@ -477,14 +448,6 @@
     ]
   },
   {
-    "country": "Sweden",
-    "country_code": "SE",
-    "protocols": [
-      "all",
-      "socks4"
-    ]
-  },
-  {
     "country": "Singapore",
     "country_code": "SG",
     "protocols": [
@@ -505,6 +468,15 @@
   {
     "country": "Thailand",
     "country_code": "TH",
+    "protocols": [
+      "all",
+      "http",
+      "socks4"
+    ]
+  },
+  {
+    "country": "TÃ¼rkiye",
+    "country_code": "TR",
     "protocols": [
       "all",
       "http"
@@ -546,21 +518,20 @@
     ]
   },
   {
+    "country": "Virgin Islands (British)",
+    "country_code": "VG",
+    "protocols": [
+      "all",
+      "http"
+    ]
+  },
+  {
     "country": "Viet Nam",
     "country_code": "VN",
     "protocols": [
       "all",
       "http",
-      "socks4",
       "socks5"
-    ]
-  },
-  {
-    "country": "Yemen",
-    "country_code": "YE",
-    "protocols": [
-      "all",
-      "socks4"
     ]
   },
   {
@@ -568,7 +539,8 @@
     "country_code": "ZA",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks4"
     ]
   },
   {
