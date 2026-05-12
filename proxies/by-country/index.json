@@ -8,14 +8,6 @@
     ]
   },
   {
-    "country": "Albania",
-    "country_code": "AL",
-    "protocols": [
-      "all",
-      "socks4"
-    ]
-  },
-  {
     "country": "Argentina",
     "country_code": "AR",
     "protocols": [
@@ -39,6 +31,7 @@
     "protocols": [
       "all",
       "http",
+      "socks4",
       "socks5"
     ]
   },
@@ -48,6 +41,7 @@
     "protocols": [
       "all",
       "http",
+      "socks4",
       "socks5"
     ]
   },
@@ -69,21 +63,12 @@
     ]
   },
   {
-    "country": "Bolivia (Plurinational State of)",
-    "country_code": "BO",
-    "protocols": [
-      "all",
-      "http"
-    ]
-  },
-  {
     "country": "Brazil",
     "country_code": "BR",
     "protocols": [
       "all",
       "http",
-      "socks4",
-      "socks5"
+      "socks4"
     ]
   },
   {
@@ -99,7 +84,6 @@
     "country_code": "CH",
     "protocols": [
       "all",
-      "http",
       "socks5"
     ]
   },
@@ -109,6 +93,7 @@
     "protocols": [
       "all",
       "http",
+      "socks4",
       "socks5"
     ]
   },
@@ -126,7 +111,7 @@
     "protocols": [
       "all",
       "http",
-      "socks4"
+      "socks5"
     ]
   },
   {
@@ -164,12 +149,19 @@
     ]
   },
   {
+    "country": "Egypt",
+    "country_code": "EG",
+    "protocols": [
+      "all",
+      "http"
+    ]
+  },
+  {
     "country": "Spain",
     "country_code": "ES",
     "protocols": [
       "all",
-      "http",
-      "socks5"
+      "socks4"
     ]
   },
   {
@@ -207,7 +199,8 @@
     "country_code": "GH",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks4"
     ]
   },
   {
@@ -217,6 +210,14 @@
       "all",
       "http",
       "socks5"
+    ]
+  },
+  {
+    "country": "Honduras",
+    "country_code": "HN",
+    "protocols": [
+      "all",
+      "http"
     ]
   },
   {
@@ -240,15 +241,6 @@
     ]
   },
   {
-    "country": "Iraq",
-    "country_code": "IQ",
-    "protocols": [
-      "all",
-      "http",
-      "socks4"
-    ]
-  },
-  {
     "country": "Iran (Islamic Republic of)",
     "country_code": "IR",
     "protocols": [
@@ -261,7 +253,6 @@
     "country_code": "IT",
     "protocols": [
       "all",
-      "http",
       "socks4",
       "socks5"
     ]
@@ -271,7 +262,9 @@
     "country_code": "JP",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks4",
+      "socks5"
     ]
   },
   {
@@ -280,6 +273,7 @@
     "protocols": [
       "all",
       "http",
+      "socks4",
       "socks5"
     ]
   },
@@ -297,7 +291,6 @@
     "country_code": "KZ",
     "protocols": [
       "all",
-      "http",
       "socks5"
     ]
   },
@@ -394,6 +387,14 @@
     ]
   },
   {
+    "country": "Pakistan",
+    "country_code": "PK",
+    "protocols": [
+      "all",
+      "socks5"
+    ]
+  },
+  {
     "country": "Poland",
     "country_code": "PL",
     "protocols": [
@@ -405,14 +406,6 @@
   {
     "country": "Portugal",
     "country_code": "PT",
-    "protocols": [
-      "all",
-      "http"
-    ]
-  },
-  {
-    "country": "Paraguay",
-    "country_code": "PY",
     "protocols": [
       "all",
       "http"
@@ -441,7 +434,6 @@
     "country_code": "SE",
     "protocols": [
       "all",
-      "http",
       "socks4",
       "socks5"
     ]
@@ -481,20 +473,11 @@
     ]
   },
   {
-    "country": "Taiwan (Province of China)",
-    "country_code": "TW",
-    "protocols": [
-      "all",
-      "http"
-    ]
-  },
-  {
     "country": "Ukraine",
     "country_code": "UA",
     "protocols": [
       "all",
-      "http",
-      "socks5"
+      "http"
     ]
   },
   {
@@ -508,11 +491,11 @@
     ]
   },
   {
-    "country": "Uruguay",
-    "country_code": "UY",
+    "country": "Uzbekistan",
+    "country_code": "UZ",
     "protocols": [
       "all",
-      "socks4"
+      "http"
     ]
   },
   {
@@ -521,7 +504,8 @@
     "protocols": [
       "all",
       "http",
-      "socks4"
+      "socks4",
+      "socks5"
     ]
   },
   {
@@ -529,8 +513,15 @@
     "country_code": "ZA",
     "protocols": [
       "all",
-      "http",
-      "socks5"
+      "http"
+    ]
+  },
+  {
+    "country": "Zimbabwe",
+    "country_code": "ZW",
+    "protocols": [
+      "all",
+      "http"
     ]
   }
 ]
