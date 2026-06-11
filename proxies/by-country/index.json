@@ -8,11 +8,36 @@
     ]
   },
   {
+    "country": "Argentina",
+    "country_code": "AR",
+    "protocols": [
+      "all",
+      "socks4"
+    ]
+  },
+  {
+    "country": "Austria",
+    "country_code": "AT",
+    "protocols": [
+      "all",
+      "socks5"
+    ]
+  },
+  {
     "country": "Australia",
     "country_code": "AU",
     "protocols": [
       "all",
-      "http"
+      "socks5"
+    ]
+  },
+  {
+    "country": "Bangladesh",
+    "country_code": "BD",
+    "protocols": [
+      "all",
+      "socks4",
+      "socks5"
     ]
   },
   {
@@ -38,7 +63,7 @@
     "country_code": "CO",
     "protocols": [
       "all",
-      "http"
+      "socks4"
     ]
   },
   {
@@ -60,6 +85,14 @@
     ]
   },
   {
+    "country": "Spain",
+    "country_code": "ES",
+    "protocols": [
+      "all",
+      "socks4"
+    ]
+  },
+  {
     "country": "Finland",
     "country_code": "FI",
     "protocols": [
@@ -74,6 +107,7 @@
     "protocols": [
       "all",
       "http",
+      "socks4",
       "socks5"
     ]
   },
@@ -82,7 +116,6 @@
     "country_code": "GB",
     "protocols": [
       "all",
-      "http",
       "socks5"
     ]
   },
@@ -91,7 +124,8 @@
     "country_code": "HK",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks5"
     ]
   },
   {
@@ -100,7 +134,7 @@
     "protocols": [
       "all",
       "http",
-      "socks4"
+      "socks5"
     ]
   },
   {
@@ -117,7 +151,8 @@
     "country_code": "IQ",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks5"
     ]
   },
   {
@@ -125,6 +160,15 @@
     "country_code": "IR",
     "protocols": [
       "all",
+      "socks5"
+    ]
+  },
+  {
+    "country": "Italy",
+    "country_code": "IT",
+    "protocols": [
+      "all",
+      "socks4",
       "socks5"
     ]
   },
@@ -143,7 +187,7 @@
     "country_code": "KH",
     "protocols": [
       "all",
-      "http",
+      "socks4",
       "socks5"
     ]
   },
@@ -153,12 +197,13 @@
     "protocols": [
       "all",
       "http",
+      "socks4",
       "socks5"
     ]
   },
   {
-    "country": "Kazakhstan",
-    "country_code": "KZ",
+    "country": "Macao",
+    "country_code": "MO",
     "protocols": [
       "all",
       "http"
@@ -169,7 +214,6 @@
     "country_code": "MX",
     "protocols": [
       "all",
-      "socks4",
       "socks5"
     ]
   },
@@ -192,16 +236,16 @@
     ]
   },
   {
-    "country": "Peru",
-    "country_code": "PE",
+    "country": "Norway",
+    "country_code": "NO",
     "protocols": [
       "all",
-      "socks4"
+      "socks5"
     ]
   },
   {
-    "country": "Philippines (the)",
-    "country_code": "PH",
+    "country": "Panama",
+    "country_code": "PA",
     "protocols": [
       "all",
       "socks4"
@@ -212,6 +256,15 @@
     "country_code": "PL",
     "protocols": [
       "all",
+      "http",
+      "socks4"
+    ]
+  },
+  {
+    "country": "Romania",
+    "country_code": "RO",
+    "protocols": [
+      "all",
       "http"
     ]
   },
@@ -220,6 +273,7 @@
     "country_code": "RU",
     "protocols": [
       "all",
+      "http",
       "socks4",
       "socks5"
     ]
@@ -233,28 +287,13 @@
     ]
   },
   {
-    "country": "Sweden",
-    "country_code": "SE",
-    "protocols": [
-      "all",
-      "http"
-    ]
-  },
-  {
     "country": "Singapore",
     "country_code": "SG",
     "protocols": [
       "all",
       "http",
+      "socks4",
       "socks5"
-    ]
-  },
-  {
-    "country": "Syrian Arab Republic (the)",
-    "country_code": "SY",
-    "protocols": [
-      "all",
-      "http"
     ]
   },
   {
@@ -262,8 +301,15 @@
     "country_code": "TH",
     "protocols": [
       "all",
-      "http",
-      "socks5"
+      "http"
+    ]
+  },
+  {
+    "country": "TÃ¼rkiye",
+    "country_code": "TR",
+    "protocols": [
+      "all",
+      "http"
     ]
   },
   {
@@ -271,15 +317,7 @@
     "country_code": "TW",
     "protocols": [
       "all",
-      "http"
-    ]
-  },
-  {
-    "country": "Tanzania, the United Republic of",
-    "country_code": "TZ",
-    "protocols": [
-      "all",
-      "http"
+      "socks5"
     ]
   },
   {
@@ -287,7 +325,7 @@
     "country_code": "UA",
     "protocols": [
       "all",
-      "http"
+      "socks4"
     ]
   },
   {
@@ -298,23 +336,6 @@
       "http",
       "socks4",
       "socks5"
-    ]
-  },
-  {
-    "country": "Viet Nam",
-    "country_code": "VN",
-    "protocols": [
-      "all",
-      "socks4",
-      "socks5"
-    ]
-  },
-  {
-    "country": "Zimbabwe",
-    "country_code": "ZW",
-    "protocols": [
-      "all",
-      "http"
     ]
   }
 ]
