@@ -40,18 +40,12 @@ These country-specific proxy lists are generated automatically from the latest s
 * **Finland (FI)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/FI/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/FI/working-proxies-http.txt`
-* **France (FR)**
-  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/FR/working-proxies-all.txt`
-  * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/FR/working-proxies-http.txt`
 * **Germany (DE)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/DE/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/DE/working-proxies-http.txt`
 * **Hong Kong (HK)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/HK/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/HK/working-proxies-http.txt`
-* **India (IN)**
-  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/IN/working-proxies-all.txt`
-  * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/IN/working-proxies-http.txt`
 * **Indonesia (ID)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/ID/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/ID/working-proxies-http.txt`
