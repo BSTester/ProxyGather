@@ -4,33 +4,7 @@
     "country_code": "AE",
     "protocols": [
       "all",
-      "http",
-      "socks4"
-    ]
-  },
-  {
-    "country": "Albania",
-    "country_code": "AL",
-    "protocols": [
-      "all",
-      "socks4"
-    ]
-  },
-  {
-    "country": "Argentina",
-    "country_code": "AR",
-    "protocols": [
-      "all",
       "http"
-    ]
-  },
-  {
-    "country": "Austria",
-    "country_code": "AT",
-    "protocols": [
-      "all",
-      "socks4",
-      "socks5"
     ]
   },
   {
@@ -38,7 +12,8 @@
     "country_code": "AU",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks4"
     ]
   },
   {
@@ -51,20 +26,11 @@
     ]
   },
   {
-    "country": "Belgium",
-    "country_code": "BE",
-    "protocols": [
-      "all",
-      "http"
-    ]
-  },
-  {
     "country": "Bulgaria",
     "country_code": "BG",
     "protocols": [
       "all",
-      "http",
-      "socks4"
+      "http"
     ]
   },
   {
@@ -73,31 +39,7 @@
     "protocols": [
       "all",
       "http",
-      "socks4"
-    ]
-  },
-  {
-    "country": "Botswana",
-    "country_code": "BW",
-    "protocols": [
-      "all",
-      "http"
-    ]
-  },
-  {
-    "country": "Canada",
-    "country_code": "CA",
-    "protocols": [
-      "all",
-      "http",
-      "socks5"
-    ]
-  },
-  {
-    "country": "Switzerland",
-    "country_code": "CH",
-    "protocols": [
-      "all",
+      "socks4",
       "socks5"
     ]
   },
@@ -134,7 +76,7 @@
     "protocols": [
       "all",
       "http",
-      "socks5"
+      "socks4"
     ]
   },
   {
@@ -156,22 +98,6 @@
     ]
   },
   {
-    "country": "Denmark",
-    "country_code": "DK",
-    "protocols": [
-      "all",
-      "http"
-    ]
-  },
-  {
-    "country": "Dominican Republic (the)",
-    "country_code": "DO",
-    "protocols": [
-      "all",
-      "http"
-    ]
-  },
-  {
     "country": "Ecuador",
     "country_code": "EC",
     "protocols": [
@@ -184,15 +110,6 @@
     "country_code": "EE",
     "protocols": [
       "all",
-      "http",
-      "socks5"
-    ]
-  },
-  {
-    "country": "Egypt",
-    "country_code": "EG",
-    "protocols": [
-      "all",
       "http"
     ]
   },
@@ -202,7 +119,6 @@
     "protocols": [
       "all",
       "http",
-      "socks4",
       "socks5"
     ]
   },
@@ -211,7 +127,9 @@
     "country_code": "FI",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks4",
+      "socks5"
     ]
   },
   {
@@ -233,14 +151,6 @@
     ]
   },
   {
-    "country": "Georgia",
-    "country_code": "GE",
-    "protocols": [
-      "all",
-      "http"
-    ]
-  },
-  {
     "country": "Greece",
     "country_code": "GR",
     "protocols": [
@@ -256,16 +166,15 @@
     "protocols": [
       "all",
       "http",
-      "socks4",
       "socks5"
     ]
   },
   {
-    "country": "Honduras",
-    "country_code": "HN",
+    "country": "Croatia",
+    "country_code": "HR",
     "protocols": [
       "all",
-      "http"
+      "socks4"
     ]
   },
   {
@@ -273,8 +182,16 @@
     "country_code": "ID",
     "protocols": [
       "all",
+      "http"
+    ]
+  },
+  {
+    "country": "Israel",
+    "country_code": "IL",
+    "protocols": [
+      "all",
       "http",
-      "socks4"
+      "socks5"
     ]
   },
   {
@@ -301,8 +218,7 @@
     "country_code": "IR",
     "protocols": [
       "all",
-      "http",
-      "socks4"
+      "http"
     ]
   },
   {
@@ -310,7 +226,6 @@
     "country_code": "IT",
     "protocols": [
       "all",
-      "http",
       "socks4",
       "socks5"
     ]
@@ -323,14 +238,6 @@
       "http",
       "socks4",
       "socks5"
-    ]
-  },
-  {
-    "country": "Kenya",
-    "country_code": "KE",
-    "protocols": [
-      "all",
-      "socks4"
     ]
   },
   {
@@ -355,12 +262,13 @@
     "country_code": "KZ",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks5"
     ]
   },
   {
-    "country": "Lithuania",
-    "country_code": "LT",
+    "country": "Lao People's Democratic Republic (the)",
+    "country_code": "LA",
     "protocols": [
       "all",
       "socks4"
@@ -371,13 +279,12 @@
     "country_code": "LV",
     "protocols": [
       "all",
-      "http",
-      "socks4"
+      "http"
     ]
   },
   {
-    "country": "Morocco",
-    "country_code": "MA",
+    "country": "Libya",
+    "country_code": "LY",
     "protocols": [
       "all",
       "http"
@@ -388,9 +295,7 @@
     "country_code": "MX",
     "protocols": [
       "all",
-      "http",
-      "socks4",
-      "socks5"
+      "http"
     ]
   },
   {
@@ -403,22 +308,20 @@
     ]
   },
   {
+    "country": "Nigeria",
+    "country_code": "NG",
+    "protocols": [
+      "all",
+      "http"
+    ]
+  },
+  {
     "country": "Netherlands (the)",
     "country_code": "NL",
     "protocols": [
       "all",
       "http",
-      "socks4",
       "socks5"
-    ]
-  },
-  {
-    "country": "Peru",
-    "country_code": "PE",
-    "protocols": [
-      "all",
-      "http",
-      "socks4"
     ]
   },
   {
@@ -445,8 +348,15 @@
     "protocols": [
       "all",
       "http",
-      "socks4",
-      "socks5"
+      "socks4"
+    ]
+  },
+  {
+    "country": "Palestine, State of",
+    "country_code": "PS",
+    "protocols": [
+      "all",
+      "socks4"
     ]
   },
   {
@@ -478,14 +388,6 @@
   {
     "country": "Rwanda",
     "country_code": "RW",
-    "protocols": [
-      "all",
-      "http"
-    ]
-  },
-  {
-    "country": "Saudi Arabia",
-    "country_code": "SA",
     "protocols": [
       "all",
       "http"
@@ -525,6 +427,14 @@
     ]
   },
   {
+    "country": "Syrian Arab Republic (the)",
+    "country_code": "SY",
+    "protocols": [
+      "all",
+      "http"
+    ]
+  },
+  {
     "country": "Thailand",
     "country_code": "TH",
     "protocols": [
@@ -538,7 +448,7 @@
     "country_code": "TR",
     "protocols": [
       "all",
-      "http"
+      "socks5"
     ]
   },
   {
@@ -554,7 +464,14 @@
     "country_code": "UA",
     "protocols": [
       "all",
-      "http",
+      "http"
+    ]
+  },
+  {
+    "country": "Uganda",
+    "country_code": "UG",
+    "protocols": [
+      "all",
       "socks4"
     ]
   },
@@ -569,14 +486,6 @@
     ]
   },
   {
-    "country": "Venezuela (Bolivarian Republic of)",
-    "country_code": "VE",
-    "protocols": [
-      "all",
-      "socks4"
-    ]
-  },
-  {
     "country": "Viet Nam",
     "country_code": "VN",
     "protocols": [
@@ -587,8 +496,16 @@
     ]
   },
   {
-    "country": "South Africa",
-    "country_code": "ZA",
+    "country": "Yemen",
+    "country_code": "YE",
+    "protocols": [
+      "all",
+      "http"
+    ]
+  },
+  {
+    "country": "Zimbabwe",
+    "country_code": "ZW",
     "protocols": [
       "all",
       "http"
