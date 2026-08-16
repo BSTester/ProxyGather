@@ -20,12 +20,21 @@
     "country_code": "CN",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks5"
     ]
   },
   {
     "country": "Cyprus",
     "country_code": "CY",
+    "protocols": [
+      "all",
+      "http"
+    ]
+  },
+  {
+    "country": "Czechia",
+    "country_code": "CZ",
     "protocols": [
       "all",
       "http"
@@ -48,16 +57,24 @@
     ]
   },
   {
-    "country": "United Kingdom of Great Britain and Northern Ireland (the)",
-    "country_code": "GB",
+    "country": "Hong Kong",
+    "country_code": "HK",
     "protocols": [
       "all",
       "http"
     ]
   },
   {
-    "country": "Hong Kong",
-    "country_code": "HK",
+    "country": "Indonesia",
+    "country_code": "ID",
+    "protocols": [
+      "all",
+      "http"
+    ]
+  },
+  {
+    "country": "India",
+    "country_code": "IN",
     "protocols": [
       "all",
       "http"
@@ -80,6 +97,22 @@
     ]
   },
   {
+    "country": "Korea (the Republic of)",
+    "country_code": "KR",
+    "protocols": [
+      "all",
+      "http"
+    ]
+  },
+  {
+    "country": "Malta",
+    "country_code": "MT",
+    "protocols": [
+      "all",
+      "socks4"
+    ]
+  },
+  {
     "country": "Malaysia",
     "country_code": "MY",
     "protocols": [
@@ -92,7 +125,9 @@
     "country_code": "NL",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks4",
+      "socks5"
     ]
   },
   {
@@ -116,15 +151,9 @@
     "country_code": "RU",
     "protocols": [
       "all",
-      "http"
-    ]
-  },
-  {
-    "country": "Saudi Arabia",
-    "country_code": "SA",
-    "protocols": [
-      "all",
-      "http"
+      "http",
+      "socks4",
+      "socks5"
     ]
   },
   {
@@ -136,19 +165,13 @@
     ]
   },
   {
-    "country": "Thailand",
-    "country_code": "TH",
-    "protocols": [
-      "all",
-      "http"
-    ]
-  },
-  {
     "country": "United States of America (the)",
     "country_code": "US",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks4",
+      "socks5"
     ]
   }
 ]
