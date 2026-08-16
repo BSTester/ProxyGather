@@ -16,6 +16,14 @@
     ]
   },
   {
+    "country": "Canada",
+    "country_code": "CA",
+    "protocols": [
+      "all",
+      "http"
+    ]
+  },
+  {
     "country": "China",
     "country_code": "CN",
     "protocols": [
@@ -44,7 +52,8 @@
     "country_code": "FR",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks5"
     ]
   },
   {
@@ -88,8 +97,24 @@
     ]
   },
   {
+    "country": "Korea (the Republic of)",
+    "country_code": "KR",
+    "protocols": [
+      "all",
+      "http"
+    ]
+  },
+  {
     "country": "Malaysia",
     "country_code": "MY",
+    "protocols": [
+      "all",
+      "http"
+    ]
+  },
+  {
+    "country": "Netherlands (the)",
+    "country_code": "NL",
     "protocols": [
       "all",
       "http"
@@ -116,7 +141,7 @@
     "country_code": "RU",
     "protocols": [
       "all",
-      "http"
+      "socks4"
     ]
   },
   {
@@ -140,7 +165,9 @@
     "country_code": "US",
     "protocols": [
       "all",
-      "http"
+      "http",
+      "socks4",
+      "socks5"
     ]
   }
 ]
