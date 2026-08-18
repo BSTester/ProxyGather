@@ -37,7 +37,6 @@ These country-specific proxy lists are generated automatically from the latest s
 * **China (CN)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CN/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CN/working-proxies-http.txt`
-  * SOCKS5: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CN/working-proxies-socks5.txt`
 * **Cyprus (CY)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CY/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CY/working-proxies-http.txt`
@@ -47,9 +46,6 @@ These country-specific proxy lists are generated automatically from the latest s
 * **Germany (DE)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/DE/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/DE/working-proxies-http.txt`
-* **Honduras (HN)**
-  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/HN/working-proxies-all.txt`
-  * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/HN/working-proxies-http.txt`
 * **Hong Kong (HK)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/HK/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/HK/working-proxies-http.txt`
@@ -62,6 +58,7 @@ These country-specific proxy lists are generated automatically from the latest s
 * **Japan (JP)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/JP/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/JP/working-proxies-http.txt`
+  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/JP/working-proxies-socks4.txt`
 * **Korea (the Republic of) (KR)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/KR/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/KR/working-proxies-http.txt`
@@ -80,9 +77,9 @@ These country-specific proxy lists are generated automatically from the latest s
 * **Romania (RO)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/RO/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/RO/working-proxies-http.txt`
-* **Saudi Arabia (SA)**
-  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/SA/working-proxies-all.txt`
-  * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/SA/working-proxies-http.txt`
+* **Russian Federation (the) (RU)**
+  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/RU/working-proxies-all.txt`
+  * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/RU/working-proxies-http.txt`
 * **Singapore (SG)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/SG/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/SG/working-proxies-http.txt`
@@ -98,9 +95,6 @@ These country-specific proxy lists are generated automatically from the latest s
 * **United States of America (the) (US)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/US/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/US/working-proxies-http.txt`
-* **Viet Nam (VN)**
-  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/VN/working-proxies-all.txt`
-  * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/VN/working-proxies-http.txt`
 <!-- country-proxy-lists:end -->
 
 ## Notice
