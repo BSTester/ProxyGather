@@ -31,19 +31,13 @@ These URLs link directly to the raw, automatically-updated proxy lists. You can 
 These country-specific proxy lists are generated automatically from the latest successful GitHub Actions run.
 
 <!-- country-proxy-lists:start -->
-* **Albania (AL)**
-  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/AL/working-proxies-all.txt`
-  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/AL/working-proxies-socks4.txt`
-* **Australia (AU)**
-  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/AU/working-proxies-all.txt`
-  * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/AU/working-proxies-http.txt`
-* **Austria (AT)**
-  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/AT/working-proxies-all.txt`
-  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/AT/working-proxies-socks4.txt`
+* **Argentina (AR)**
+  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/AR/working-proxies-all.txt`
+  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/AR/working-proxies-socks4.txt`
 * **Bangladesh (BD)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/BD/working-proxies-all.txt`
+  * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/BD/working-proxies-http.txt`
   * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/BD/working-proxies-socks4.txt`
-  * SOCKS5: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/BD/working-proxies-socks5.txt`
 * **Belgium (BE)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/BE/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/BE/working-proxies-http.txt`
@@ -58,6 +52,7 @@ These country-specific proxy lists are generated automatically from the latest s
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/KH/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/KH/working-proxies-http.txt`
   * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/KH/working-proxies-socks4.txt`
+  * SOCKS5: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/KH/working-proxies-socks5.txt`
 * **Canada (CA)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CA/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CA/working-proxies-http.txt`
@@ -66,23 +61,24 @@ These country-specific proxy lists are generated automatically from the latest s
 * **Chile (CL)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CL/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CL/working-proxies-http.txt`
-  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CL/working-proxies-socks4.txt`
 * **China (CN)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CN/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CN/working-proxies-http.txt`
+  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CN/working-proxies-socks4.txt`
   * SOCKS5: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CN/working-proxies-socks5.txt`
 * **Colombia (CO)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CO/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CO/working-proxies-http.txt`
+  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CO/working-proxies-socks4.txt`
+* **Croatia (HR)**
+  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/HR/working-proxies-all.txt`
+  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/HR/working-proxies-socks4.txt`
 * **Cyprus (CY)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CY/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CY/working-proxies-http.txt`
-* **Czechia (CZ)**
-  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CZ/working-proxies-all.txt`
-  * SOCKS5: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/CZ/working-proxies-socks5.txt`
-* **Denmark (DK)**
-  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/DK/working-proxies-all.txt`
-  * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/DK/working-proxies-http.txt`
+* **Dominican Republic (the) (DO)**
+  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/DO/working-proxies-all.txt`
+  * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/DO/working-proxies-http.txt`
 * **Ecuador (EC)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/EC/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/EC/working-proxies-http.txt`
@@ -114,11 +110,14 @@ These country-specific proxy lists are generated automatically from the latest s
 * **Honduras (HN)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/HN/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/HN/working-proxies-http.txt`
+  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/HN/working-proxies-socks4.txt`
 * **Hong Kong (HK)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/HK/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/HK/working-proxies-http.txt`
-  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/HK/working-proxies-socks4.txt`
   * SOCKS5: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/HK/working-proxies-socks5.txt`
+* **Hungary (HU)**
+  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/HU/working-proxies-all.txt`
+  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/HU/working-proxies-socks4.txt`
 * **India (IN)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/IN/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/IN/working-proxies-http.txt`
@@ -146,7 +145,7 @@ These country-specific proxy lists are generated automatically from the latest s
   * SOCKS5: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/KZ/working-proxies-socks5.txt`
 * **Kenya (KE)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/KE/working-proxies-all.txt`
-  * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/KE/working-proxies-http.txt`
+  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/KE/working-proxies-socks4.txt`
 * **Korea (the Republic of) (KR)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/KR/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/KR/working-proxies-http.txt`
@@ -158,10 +157,12 @@ These country-specific proxy lists are generated automatically from the latest s
 * **Latvia (LV)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/LV/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/LV/working-proxies-http.txt`
-  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/LV/working-proxies-socks4.txt`
-* **Lesotho (LS)**
-  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/LS/working-proxies-all.txt`
-  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/LS/working-proxies-socks4.txt`
+* **Libya (LY)**
+  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/LY/working-proxies-all.txt`
+  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/LY/working-proxies-socks4.txt`
+* **Lithuania (LT)**
+  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/LT/working-proxies-all.txt`
+  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/LT/working-proxies-socks4.txt`
 * **Luxembourg (LU)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/LU/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/LU/working-proxies-http.txt`
@@ -172,6 +173,15 @@ These country-specific proxy lists are generated automatically from the latest s
 * **Malaysia (MY)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/MY/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/MY/working-proxies-http.txt`
+* **Mexico (MX)**
+  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/MX/working-proxies-all.txt`
+  * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/MX/working-proxies-http.txt`
+* **Myanmar (MM)**
+  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/MM/working-proxies-all.txt`
+  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/MM/working-proxies-socks4.txt`
+* **Nepal (NP)**
+  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/NP/working-proxies-all.txt`
+  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/NP/working-proxies-socks4.txt`
 * **Netherlands (the) (NL)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/NL/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/NL/working-proxies-http.txt`
@@ -180,22 +190,14 @@ These country-specific proxy lists are generated automatically from the latest s
 * **Nigeria (NG)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/NG/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/NG/working-proxies-http.txt`
-  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/NG/working-proxies-socks4.txt`
-* **Pakistan (PK)**
-  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/PK/working-proxies-all.txt`
-  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/PK/working-proxies-socks4.txt`
 * **Palestine, State of (PS)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/PS/working-proxies-all.txt`
   * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/PS/working-proxies-socks4.txt`
-* **Paraguay (PY)**
-  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/PY/working-proxies-all.txt`
-  * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/PY/working-proxies-http.txt`
-* **Philippines (the) (PH)**
-  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/PH/working-proxies-all.txt`
-  * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/PH/working-proxies-http.txt`
 * **Poland (PL)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/PL/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/PL/working-proxies-http.txt`
+  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/PL/working-proxies-socks4.txt`
+  * SOCKS5: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/PL/working-proxies-socks5.txt`
 * **Portugal (PT)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/PT/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/PT/working-proxies-http.txt`
@@ -204,6 +206,9 @@ These country-specific proxy lists are generated automatically from the latest s
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/RU/working-proxies-http.txt`
   * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/RU/working-proxies-socks4.txt`
   * SOCKS5: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/RU/working-proxies-socks5.txt`
+* **Rwanda (RW)**
+  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/RW/working-proxies-all.txt`
+  * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/RW/working-proxies-http.txt`
 * **Saudi Arabia (SA)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/SA/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/SA/working-proxies-http.txt`
@@ -213,8 +218,6 @@ These country-specific proxy lists are generated automatically from the latest s
 * **Serbia (RS)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/RS/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/RS/working-proxies-http.txt`
-  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/RS/working-proxies-socks4.txt`
-  * SOCKS5: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/RS/working-proxies-socks5.txt`
 * **Seychelles (SC)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/SC/working-proxies-all.txt`
   * SOCKS5: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/SC/working-proxies-socks5.txt`
@@ -226,7 +229,6 @@ These country-specific proxy lists are generated automatically from the latest s
 * **South Africa (ZA)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/ZA/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/ZA/working-proxies-http.txt`
-  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/ZA/working-proxies-socks4.txt`
 * **Spain (ES)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/ES/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/ES/working-proxies-http.txt`
@@ -239,6 +241,7 @@ These country-specific proxy lists are generated automatically from the latest s
 * **Taiwan (Province of China) (TW)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/TW/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/TW/working-proxies-http.txt`
+  * SOCKS5: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/TW/working-proxies-socks5.txt`
 * **Thailand (TH)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/TH/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/TH/working-proxies-http.txt`
@@ -249,6 +252,7 @@ These country-specific proxy lists are generated automatically from the latest s
 * **Ukraine (UA)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/UA/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/UA/working-proxies-http.txt`
+  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/UA/working-proxies-socks4.txt`
 * **United Kingdom of Great Britain and Northern Ireland (the) (GB)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/GB/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/GB/working-proxies-http.txt`
@@ -259,9 +263,6 @@ These country-specific proxy lists are generated automatically from the latest s
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/US/working-proxies-http.txt`
   * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/US/working-proxies-socks4.txt`
   * SOCKS5: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/US/working-proxies-socks5.txt`
-* **Uruguay (UY)**
-  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/UY/working-proxies-all.txt`
-  * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/UY/working-proxies-socks4.txt`
 * **Uzbekistan (UZ)**
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/UZ/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/UZ/working-proxies-http.txt`
@@ -272,7 +273,9 @@ These country-specific proxy lists are generated automatically from the latest s
   * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/VN/working-proxies-all.txt`
   * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/VN/working-proxies-http.txt`
   * SOCKS4: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/VN/working-proxies-socks4.txt`
-  * SOCKS5: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/VN/working-proxies-socks5.txt`
+* **Zimbabwe (ZW)**
+  * All Protocols: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/ZW/working-proxies-all.txt`
+  * HTTP: `https://raw.githubusercontent.com/BSTester/ProxyGather/refs/heads/master/proxies/by-country/ZW/working-proxies-http.txt`
 <!-- country-proxy-lists:end -->
 
 ## Notice
